@@ -1,25 +1,4 @@
-spring:
-  #通过git配置服务名
-  application:
-    name: config-client
-  
-  #配置rabbitmq连接
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
 
-server:
-  port: 8881
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
-#测试本地配置修改热更新
-test: refresh message
-
-hello: i love you to much
+hello: i love you
 
