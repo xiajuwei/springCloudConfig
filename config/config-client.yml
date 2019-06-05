@@ -1,5 +1,30 @@
+spring:
+  #通过git配置服务名
+  #  application:
+  #    name: config-client
+  
+  #配置rabbitmq连接
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 8881
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+#测试本地配置修改热更新
+test: refresh message
+
 hello: i love you to much
 
-spring:
-  application:
-    name: eureka-feigin
