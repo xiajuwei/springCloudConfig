@@ -1,7 +1,7 @@
 spring:
   #通过git配置服务名
-  #  application:
-  #    name: config-client
+  application:
+    name: config-client
   
   #配置rabbitmq连接
   rabbitmq:
